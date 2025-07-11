@@ -1,14 +1,1318 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
+    <title>
+      Virtual Private Server Provider in Michigan | ARZ Host - Fast, Secure &
+      Affordable VPS Hosting
+    </title>
+    <meta
+      name="description"
+      content="Professional VPS hosting provider in Michigan. Fast, secure, and affordable virtual private servers perfect for Michigan businesses, developers, and agencies. Starting at $12.50/month."
+    />
+    <meta
+      name="keywords"
+      content="vps hosting michigan, virtual private server michigan, michigan vps provider, detroit vps hosting, grand rapids server hosting"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        background-color: #121212;
+        color: #ffffff;
+        line-height: 1.6;
+        min-height: 100vh;
+      }
+
+      /* Brand colors */
+      :root {
+        --primary: #ff0033;
+        --secondary: #3a3a3a;
+        --background: #121212;
+        --card: #1f1f1f;
+        --muted: #b3b3b3;
+        --border: rgba(59, 59, 59, 0.2);
+      }
+
+      /* Container */
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        width: 100%;
+      }
+
+      /* Header styles */
+      header {
+        border-bottom: 1px solid var(--border);
+        padding: 1rem 0;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .logo svg {
+        width: 2rem;
+        height: 2rem;
+        color: var(--primary);
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+      }
+
+      .logo a {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.15s ease;
+      }
+
+      .logo a:hover {
+        color: var(--primary);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.15s ease;
+        font-weight: 400;
+      }
+
+      .nav-links a:first-child {
+        font-weight: 500;
+      }
+
+      .nav-links a:hover {
+        color: var(--primary);
+      }
+
+      /* Mobile navigation */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+      }
+
+      /* Button styles */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.375rem;
+        font-weight: 500;
+        text-decoration: none;
+        transition: all 0.15s ease;
+        cursor: pointer;
+        border: none;
+        white-space: nowrap;
+      }
+
+      .btn-primary {
+        background-color: var(--primary);
+        color: #ffffff;
+      }
+
+      .btn-primary:hover {
+        background-color: #e6002e;
+      }
+
+      .btn-lg {
+        padding: 1.5rem 2rem;
+        font-size: 1.125rem;
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        border: 1px solid var(--border);
+        color: #ffffff;
+      }
+
+      .btn-outline:hover {
+        background-color: var(--primary);
+        border-color: var(--primary);
+      }
+
+      /* Hero section */
+      .hero {
+        padding: 5rem 1rem;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 3.75rem;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero .highlight {
+        color: var(--primary);
+      }
+
+      .hero .subtitle {
+        font-size: 1.5rem;
+        color: var(--muted);
+        margin-bottom: 1rem;
+        max-width: 56rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero .description {
+        font-size: 1.125rem;
+        color: var(--muted);
+        margin-bottom: 2rem;
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero .description a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      .hero .description a:hover {
+        text-decoration: underline;
+      }
+
+      /* Section styles */
+      .section {
+        padding: 4rem 1rem;
+      }
+
+      .section-gray {
+        background-color: rgba(59, 59, 59, 0.1);
+      }
+
+      .section h2 {
+        font-size: 2.25rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section h2 a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      .section h2 a:hover {
+        text-decoration: underline;
+      }
+
+      /* Grid layouts */
+      .grid-4 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+
+      .grid-5 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .grid-3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+      }
+
+      /* Card styles */
+      .card {
+        background-color: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        border-color: rgba(255, 0, 51, 0.3);
+      }
+
+      .card-header {
+        margin-bottom: 1rem;
+      }
+
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .card-price {
+        font-size: 1.875rem;
+        font-weight: 700;
+        color: var(--primary);
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      .card-description {
+        color: var(--muted);
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+      }
+
+      .card-specs {
+        margin-bottom: 1rem;
+      }
+
+      .spec-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
+      }
+
+      .spec-item svg {
+        width: 1rem;
+        height: 1rem;
+        color: var(--primary);
+      }
+
+      /* Popular badge */
+      .popular-card {
+        position: relative;
+        border: 2px solid var(--primary);
+      }
+
+      .popular-badge {
+        position: absolute;
+        top: -0.75rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--primary);
+        color: #ffffff;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+
+      /* Feature boxes */
+      .feature-box {
+        display: flex;
+        gap: 1rem;
+        padding: 1.5rem;
+        background-color: var(--card);
+        border-radius: 0.5rem;
+        border: 1px solid var(--border);
+      }
+
+      .feature-icon {
+        color: var(--primary);
+        flex-shrink: 0;
+      }
+
+      .feature-icon svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      .feature-content h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .feature-content p {
+        color: var(--muted);
+      }
+
+      /* Use case cards */
+      .use-case-card {
+        background-color: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+      }
+
+      .use-case-title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .use-case-title svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: var(--primary);
+      }
+
+      /* Guarantee boxes */
+      .guarantee-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+      }
+
+      .guarantee-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        background-color: var(--card);
+        border-radius: 0.5rem;
+        border: 1px solid var(--border);
+        font-weight: 500;
+      }
+
+      .guarantee-box svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        color: var(--primary);
+      }
+
+      /* Footer styles */
+      footer {
+        background-color: rgba(59, 59, 59, 0.2);
+        border-top: 1px solid var(--border);
+        padding: 3rem 1rem;
+      }
+
+      .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer-section h3 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-section a {
+        color: var(--muted);
+        text-decoration: none;
+        transition: color 0.15s ease;
+      }
+
+      .footer-section a:hover {
+        color: var(--primary);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid var(--border);
+        padding-top: 2rem;
+        text-align: center;
+      }
+
+      .footer-bottom p {
+        color: var(--muted);
+      }
+
+      .footer-bottom a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      .footer-bottom a:hover {
+        text-decoration: underline;
+      }
+
+      /* CTA section */
+      .cta-section {
+        text-align: center;
+        padding: 4rem 1rem;
+      }
+
+      .cta-quote {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        font-style: italic;
+      }
+
+      .cta-tagline {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 1.5rem;
+      }
+
+      /* Responsive design */
+      @media (max-width: 1024px) {
+        .hero h1 {
+          font-size: 3rem;
+        }
+
+        .grid-4 {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+
+        .grid-5 {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          padding: 3rem 1rem;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero .subtitle {
+          font-size: 1.25rem;
+        }
+
+        .section h2 {
+          font-size: 1.875rem;
+        }
+
+        .grid-4,
+        .grid-5,
+        .grid-3,
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+
+        .guarantee-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .btn-lg {
+          padding: 1rem 1.5rem;
+          font-size: 1rem;
+        }
+      }
+
+      /* Icons */
+      .icon {
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
   </head>
-
   <body>
-    <div id="root"></div>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <svg class="icon" viewBox="0 0 24 24">
+              <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+              <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+              <line x1="6" x2="6.01" y1="6" y2="6" />
+              <line x1="6" x2="6.01" y1="18" y2="18" />
+            </svg>
+            <a href="https://arzhost.com/">ARZ Host</a>
+          </div>
+          <div class="nav-links">
+            <a href="https://arzhost.com/vps/">VPS Hosting</a>
+            <a href="https://arzhost.com/region-based-vps/">VPS Region</a>
+            <a href="https://arzhost.com/lifetime-web-hosting/"
+              >Lifetime Web Hosting</a
+            >
+            <a href="https://arzhost.com/about-us/">About Us</a>
+            <a href="https://arzhost.com/contact-us/">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-    <script type="module" src="/client/App.tsx"></script>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <h1>
+          Virtual Private Server Provider in
+          <span class="highlight">Michigan</span>
+        </h1>
+        <p class="subtitle">
+          Fast, Secure & Affordable VPS Hosting for Michigan-Based Projects
+        </p>
+        <p class="description">
+          Are you searching for a
+          <a href="https://arzhost.com/vps/"
+            >virtual private server provider in Michigan</a
+          >
+          who delivers performance, affordability, and peace of mind? We've got
+          you covered! From Detroit to Grand Rapids and everywhere in between,
+          our high-speed VPS servers are perfect for local startups, growing
+          businesses, developers, and agencies. Enjoy the power of local hosting
+          without the local price tag.
+        </p>
+        <a href="https://arzhost.com/vps/" class="btn btn-primary btn-lg"
+          >Get Started with Michigan VPS</a
+        >
+      </div>
+    </section>
+
+    <!-- Why Choose VPS Section -->
+    <section class="section section-gray">
+      <div class="container">
+        <h2>Why Choose VPS Hosting in Michigan?</h2>
+        <div class="grid-4">
+          <div class="card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg>
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">Strategic Midwest Location</h3>
+            </div>
+            <p class="card-description">
+              Our servers are located in premium data centers that serve
+              Michigan and surrounding U.S. states with ultra-low latency. Your
+              websites and applications will load faster, respond quicker, and
+              rank higher in local search.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+              </svg>
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">Full Control & Enhanced Security</h3>
+            </div>
+            <p class="card-description">
+              You get full root access to your VPS, allowing you to install
+              custom software, manage firewalls, and secure your environment
+              without limits.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+              </svg>
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">100% Scalable Resources</h3>
+            </div>
+            <p class="card-description">
+              Need more RAM or CPU later? No problem. You can scale up anytime
+              without migrating or reinstalling your system.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="m22 21-3-3m0 0a2 2 0 0 0 0-4 2 2 0 0 0 0 4" />
+              </svg>
+            </div>
+            <div class="card-header">
+              <h3 class="card-title">
+                Great for Michigan Businesses & Creators
+              </h3>
+            </div>
+            <p class="card-description">
+              From local shops and bloggers to developers and digital marketers,
+              our VPS hosting is trusted by professionals who want reliable,
+              fast, and local support.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem">
+          <a href="https://arzhost.com/vps/" class="btn btn-primary btn-lg"
+            >Launch Your VPS Now</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Plans Section -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem">
+          <h2>
+            VPS Hosting Plans – Exact Pricing from
+            <a href="https://arzhost.com/">ARZ Host</a>
+          </h2>
+          <p style="font-size: 1.125rem; color: var(--muted)">
+            All VPS plans include full root access, instant setup, 24/7 support,
+            NVMe SSD, and 1 IPv4 address.
+          </p>
+        </div>
+        <div class="grid-5">
+          <!-- VPS Starter -->
+          <div class="card">
+            <div style="text-align: center">
+              <h3 class="card-title">VPS Starter</h3>
+              <div class="card-price">$12.50/month</div>
+            </div>
+            <div class="card-specs">
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="6" rx="1" />
+                  <rect x="4" y="14" width="16" height="6" rx="1" />
+                </svg>
+                <span>1 vCore</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                  <line x1="6" x2="6.01" y1="6" y2="6" />
+                  <line x1="6" x2="6.01" y1="18" y2="18" />
+                </svg>
+                <span>2 GB RAM</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                </svg>
+                <span>20 GB SSD NVMe</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                </svg>
+                <span>250 Mbps</span>
+              </div>
+            </div>
+            <p class="card-description">
+              Great for beginners, portfolio websites, or lightweight apps.
+            </p>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem">
+              Fast provisioning and easy OS installation make it ideal for
+              first-time users.
+            </p>
+            <a
+              href="https://arzhost.com/vps/"
+              class="btn btn-primary"
+              style="width: 100%"
+              >Order Starter Plan</a
+            >
+          </div>
+
+          <!-- VPS Value -->
+          <div class="card">
+            <div style="text-align: center">
+              <h3 class="card-title">VPS Value</h3>
+              <div class="card-price">$16.00/month</div>
+            </div>
+            <div class="card-specs">
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="6" rx="1" />
+                  <rect x="4" y="14" width="16" height="6" rx="1" />
+                </svg>
+                <span>1 vCore</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                  <line x1="6" x2="6.01" y1="6" y2="6" />
+                  <line x1="6" x2="6.01" y1="18" y2="18" />
+                </svg>
+                <span>2 GB RAM</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                </svg>
+                <span>40 GB SSD NVMe</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                </svg>
+                <span>250 Mbps</span>
+              </div>
+            </div>
+            <p class="card-description">
+              More storage for blogs, landing pages, and development work.
+            </p>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem">
+              Excellent for freelancers and students who need more space without
+              more cost.
+            </p>
+            <a
+              href="https://arzhost.com/vps/"
+              class="btn btn-primary"
+              style="width: 100%"
+              >Order Value Plan</a
+            >
+          </div>
+
+          <!-- VPS Essential (Popular) -->
+          <div class="card popular-card">
+            <div class="popular-badge">Most Popular</div>
+            <div style="text-align: center">
+              <h3 class="card-title">VPS Essential</h3>
+              <div class="card-price">$34.00/month</div>
+            </div>
+            <div class="card-specs">
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="6" rx="1" />
+                  <rect x="4" y="14" width="16" height="6" rx="1" />
+                </svg>
+                <span>2 vCores</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                  <line x1="6" x2="6.01" y1="6" y2="6" />
+                  <line x1="6" x2="6.01" y1="18" y2="18" />
+                </svg>
+                <span>4 GB RAM</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                </svg>
+                <span>80 GB SSD NVMe</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                </svg>
+                <span>500 Mbps</span>
+              </div>
+            </div>
+            <p class="card-description">
+              Suitable for business websites, CRMs, or moderate eCommerce
+              stores.
+            </p>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem">
+              Balanced specs for performance, flexibility, and affordability.
+            </p>
+            <a
+              href="https://arzhost.com/vps/"
+              class="btn btn-primary"
+              style="width: 100%"
+              >Order Essential Plan</a
+            >
+          </div>
+
+          <!-- VPS Comfort -->
+          <div class="card">
+            <div style="text-align: center">
+              <h3 class="card-title">VPS Comfort</h3>
+              <div class="card-price">$54.00/month</div>
+            </div>
+            <div class="card-specs">
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="6" rx="1" />
+                  <rect x="4" y="14" width="16" height="6" rx="1" />
+                </svg>
+                <span>4 vCores</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                  <line x1="6" x2="6.01" y1="6" y2="6" />
+                  <line x1="6" x2="6.01" y1="18" y2="18" />
+                </svg>
+                <span>8 GB RAM</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                </svg>
+                <span>160 GB SSD NVMe</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                </svg>
+                <span>1 Gbps</span>
+              </div>
+            </div>
+            <p class="card-description">
+              Designed for agencies, marketing firms, and growing tech startups.
+            </p>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem">
+              Supports high-traffic websites, CMS platforms, or multiple client
+              accounts.
+            </p>
+            <a
+              href="https://arzhost.com/vps/"
+              class="btn btn-primary"
+              style="width: 100%"
+              >Order Comfort Plan</a
+            >
+          </div>
+
+          <!-- VPS Elite -->
+          <div class="card">
+            <div style="text-align: center">
+              <h3 class="card-title">VPS Elite</h3>
+              <div class="card-price">$60.00/month</div>
+            </div>
+            <div class="card-specs">
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect x="4" y="4" width="16" height="6" rx="1" />
+                  <rect x="4" y="14" width="16" height="6" rx="1" />
+                </svg>
+                <span>8 vCores</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                  <line x1="6" x2="6.01" y1="6" y2="6" />
+                  <line x1="6" x2="6.01" y1="18" y2="18" />
+                </svg>
+                <span>32 GB RAM</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                  <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+                </svg>
+                <span>640 GB SSD NVMe</span>
+              </div>
+              <div class="spec-item">
+                <svg class="icon" viewBox="0 0 24 24">
+                  <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" />
+                </svg>
+                <span>2 Gbps</span>
+              </div>
+            </div>
+            <p class="card-description">
+              Built for big data, streaming platforms, or enterprise-level
+              hosting.
+            </p>
+            <p style="font-size: 0.875rem; margin-bottom: 1rem">
+              Handles anything from private servers to multi-site platforms with
+              heavy traffic.
+            </p>
+            <a
+              href="https://arzhost.com/vps/"
+              class="btn btn-primary"
+              style="width: 100%"
+              >Order Elite Plan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VPS Features Section -->
+    <section class="section section-gray">
+      <div class="container">
+        <h2>VPS Features Tailored for Michigan Hosting Needs</h2>
+        <div class="grid-3">
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                <line x1="6" x2="6.01" y1="6" y2="6" />
+                <line x1="6" x2="6.01" y1="18" y2="18" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Full OS Control</h3>
+              <p>
+                Install your choice of Linux or Windows OS with full access to
+                every layer of your system.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>NVMe SSD Storage</h3>
+              <p>
+                Experience lightning-fast file access, database queries, and
+                page loads with ultra-reliable SSDs.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Static IPv4 Included</h3>
+              <p>
+                Get better email deliverability, SEO, and remote access with a
+                dedicated IP address for every VPS.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Free DDoS Protection</h3>
+              <p>
+                Keep your server safe from malicious attacks with built-in DDoS
+                filtering and firewall options.
+              </p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="m22 21-3-3m0 0a2 2 0 0 0 0-4 2 2 0 0 0 0 4" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h3>Optional Server Management</h3>
+              <p>
+                Don't want to manage it yourself? Our cheap server management
+                options are available at checkout.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem">
+          <a href="https://arzhost.com/vps/" class="btn btn-outline btn-lg"
+            >View All Features</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Who Needs a VPS in Michigan?</h2>
+        <div class="grid-2">
+          <div class="use-case-card">
+            <div class="use-case-title">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Web Developers & Freelancers</span>
+            </div>
+            <p style="color: var(--muted)">
+              Test websites, build staging environments, or host personal apps
+              with freedom and root-level access.
+            </p>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-title">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Small to Medium Businesses</span>
+            </div>
+            <p style="color: var(--muted)">
+              Run your CRM, email server, or online store locally — with fast
+              access and minimal latency for Michigan customers.
+            </p>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-title">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Students & Tech Enthusiasts</span>
+            </div>
+            <p style="color: var(--muted)">
+              Experiment with code, operating systems, and configurations on
+              your own dedicated virtual server.
+            </p>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-title">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Agencies & Resellers</span>
+            </div>
+            <p style="color: var(--muted)">
+              Host client sites on private environments, install multiple
+              control panels, and deliver a professional experience.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem">
+          <a href="https://arzhost.com/vps/" class="btn btn-primary btn-lg"
+            >Pick the Perfect Plan for You</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Local Hosting Section -->
+    <section class="section section-gray">
+      <div class="container">
+        <div style="text-align: center">
+          <h2>Local Hosting with Global Reliability</h2>
+          <p
+            style="
+              font-size: 1.125rem;
+              margin-bottom: 2rem;
+              color: var(--muted);
+              max-width: 48rem;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
+            As a top virtual private server provider in Michigan, we offer the
+            best of both worlds:
+            <strong style="color: #ffffff">
+              Local speed + Global-grade reliability</strong
+            >. Whether you're in Detroit, Lansing, Ann Arbor, or Kalamazoo — our
+            <a
+              href="https://arzhost.com/"
+              style="color: var(--primary); text-decoration: none"
+              >VPS services</a
+            >
+            are built to perform and scale.
+          </p>
+          <div class="guarantee-grid">
+            <div class="guarantee-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>99.9% Uptime Guarantee</span>
+            </div>
+            <div class="guarantee-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Premium NVMe SSD Storage</span>
+            </div>
+            <div class="guarantee-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>Scalable CPU, RAM, & Disk Upgrades</span>
+            </div>
+            <div class="guarantee-box">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+              <span>24/7 Live Chat & Ticket Support</span>
+            </div>
+          </div>
+          <a href="https://arzhost.com/vps/" class="btn btn-primary btn-lg"
+            >Start Hosting from Michigan Today</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 style="font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem">
+          Need Help Picking a Plan?
+        </h2>
+        <p
+          style="
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            color: var(--muted);
+            max-width: 32rem;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          Whether you're just getting started or switching from another
+          provider, we're here to guide you through the process.
+        </p>
+        <p class="cta-quote">
+          "Chat with our VPS experts today — or jump straight in and launch your
+          server in just minutes!"
+        </p>
+        <div class="cta-tagline">
+          Reliable VPS Hosting. Local Advantage. Global Reach.
+        </div>
+        <a href="https://arzhost.com/vps/" class="btn btn-primary btn-lg"
+          >Order Now</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <div class="logo" style="margin-bottom: 1rem">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                style="width: 1.5rem; height: 1.5rem"
+              >
+                <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                <line x1="6" x2="6.01" y1="6" y2="6" />
+                <line x1="6" x2="6.01" y1="18" y2="18" />
+              </svg>
+              <span style="font-size: 1.25rem; font-weight: 700">ARZ Host</span>
+            </div>
+            <p style="color: var(--muted); margin-bottom: 1rem">
+              Professional VPS hosting provider serving Michigan and beyond with
+              reliable, fast, and secure virtual private servers.
+            </p>
+            <div style="font-size: 0.875rem">
+              <p style="margin-bottom: 0.5rem">
+                <strong>Website:</strong>
+                <a href="https://arzhost.com/">arzhost.com</a>
+              </p>
+              <p>
+                <strong>Phone:</strong>
+                <a href="tel:+16315948060">+1 (631) 594-8060</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="https://arzhost.com/vps/">VPS Hosting</a></li>
+              <li>
+                <a href="https://arzhost.com/region-based-vps/"
+                  >Region-Based VPS</a
+                >
+              </li>
+              <li>
+                <a href="https://arzhost.com/lifetime-web-hosting/"
+                  >Lifetime Web Hosting</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="https://arzhost.com/about-us/">About Us</a></li>
+              <li><a href="https://arzhost.com/contact-us/">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Legal</h3>
+            <ul>
+              <li>
+                <a href="https://arzhost.com/terms-conditions/"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li>
+                <a href="https://arzhost.com/privacy-policy/">Privacy Policy</a>
+              </li>
+              <li><a href="https://arzhost.com/disclaimer/">Disclaimer</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2024 <a href="https://arzhost.com/">ARZ Host</a>. All rights
+            reserved. Professional VPS hosting solutions for Michigan businesses
+            and developers.
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
